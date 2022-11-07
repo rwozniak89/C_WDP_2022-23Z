@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1667834101 source:c:\projects\c_wdp_2022-23z\startowy\main.c
+	<stdio.h>
+	<stdlib.h>
+
