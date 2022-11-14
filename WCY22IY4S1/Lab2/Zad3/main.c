@@ -7,29 +7,41 @@
 int main()
 {
     printf("Zad3!\n");
-
-    int i = 0;
-    int max = 10; // i + 10;
+    //c
+    int i = 45879;
+    int max = i + 15;
 
     while(i < max){
-        printf("%i ", i);
+//        if( i % 3 == 0 || i % 5 == 0){
+//            printf("%i ", i);
+//        }
+
+        if( i % 3 == 0){
+            printf("%i ", i);
+        }
+        else if( i % 5 == 0)){
+            printf("%i ", i);
+        }
+
         i = i+1;
     }
     printf("\n");
 
     //for( ; ; )
-    for(int j = 0; j < max; j++)
-    {
-        printf("%i ", j);
-    }
-    printf("\n");
-
-    int k = 0;
-    do{
-        printf("%i ", k);
-        k++;
-    } while(k<max);
-    printf("\n");
+//    for(int j = 0; j < max; j++) // skok o 2 ... j=j+2
+//    {
+//        printf("%i ", j);
+//
+//        //j=j+1; //j++;
+//    }
+//    printf("\n");
+//
+//    int k = 0;
+//    do{
+//        printf("%i ", k);
+//        k++;
+//    } while(k<max);
+//    printf("\n");
 
     //if( x % 3 == 0 || x > 5)
 
