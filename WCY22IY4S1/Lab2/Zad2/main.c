@@ -12,21 +12,23 @@ int main(){
     unsigned int u1=25, u2=50;
 
     float f1=12.4, f2=6.12;
-    long int l1=25, l2=5;
+    long long l1=11111111111111125, l2=5;
 
     char c1='a';
     char c2='b';
 
     printf("unsigned int sum %i\n", u1 + u2);
-    printf("float sum %f\n", f1 + f2);
-    printf("long int sum %ld\n", l1 + l2);
+    printf("float sum %.2f\n", f1 + f2);
+     printf("float sum %g\n", f1 + f2);
+    printf("long int sum %lld\n", l1 + l2);
     printf("char sum %c\n", c1 + c2);
     printf("char sum %i\n", c1 + c2);
 
+    unsigned char c3 = c2 + 200;
     printf("char sum %c\n", c2 + 1);
     printf("char sum %i\n", c2 + 1);
-    printf("char sum %i\n", c2 + 500);
-    printf("char sum %c\n", c2 + 500);
+    printf("char sum %i\n", c3);
+    printf("char sum %c\n", c3);
 
     printf("unsigned int diffrence %u\n", u1 - u2);
     printf("float diffrence %f\n", f1 - f2);
@@ -38,8 +40,7 @@ int main(){
     printf("long int multiply %ld\n", l1 * l2);
     printf("char multiply %c\n", c1 * c2);
 
-    if( u2 != 0 && f2 != 0.0 && l2 != 0 && c2 != 0)
-    {
+    if( u2 != 0 && f2 != 0.0 && l2 != 0 && c2 != 0)  // AND - && , OR - ||
         printf("unsigned int division %i\n", u1 / u2);
         printf("float division %f\n", f1 / f2);
         printf("long int division %ld\n", l1 / l2);

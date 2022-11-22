@@ -12,8 +12,8 @@ int main()
     int a5=5;
     int b5=5;
 
-    printf("a5 *= : %d \n", a5 *= a5++);
-    printf("b5 *= : %d \n", b5 *= ++b5);
+    printf("a5 *= : %d \n", a5 *= a5++); //a5_2 = a5_2 * a5_1; a5_1 = a5_1 + 1;
+    printf("b5 *= : %d \n", b5 *= ++b5); //(b5 = b5 +1); b5 = b5 * b5;
 
 
     return 0;
