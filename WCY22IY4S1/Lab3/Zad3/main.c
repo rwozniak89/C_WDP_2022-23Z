@@ -8,7 +8,7 @@ int main()
     printf("task1!\n");
 
     char name[] = "a b"; //\0
-    char name1[] = {'a', ' ', 'b'}; //\0
+    char name1[] = {'a', ' ', 'b', '\0'}; //\0
 
     int sizeArrayName1 = sizeof(name1)/ sizeof(char);
     int sizeArrayName0 = sizeof(name )/ sizeof(char);
@@ -16,11 +16,15 @@ int main()
     printf("sizeArrayName1: %i\n",  sizeArrayName1);
     printf("sizeArrayName0: %i\n",  sizeArrayName0);
 
-    char name2[20];
+    char name2[8];
     name2[0] = 'c';
     name2[1] = ' ';
     name2[2] = 'd';
-    //name2[3] = '\0';
+    name2[3] = 'a';
+    name2[4] = 'r';
+    name2[5] = 'e';
+    name2[6] = 'k';
+    name2[7] = '\0';
 
     printf("%s\n", name);
     printf("%s\n", name2);
@@ -39,6 +43,19 @@ int main()
         printf("%i - %c - %i - %d \n", j, name2[j], name2[j], name2[j]);
     }
 
+    char tabX[8];
+
+    for(int j=0; j < sizeArrayName2; j++)
+    {
+        tabX[j] = name2[j] + 1;
+    }
+
+    for(int j=0; j < sizeArrayName2; j++)
+    {
+        printf("%i - %c - %i - %d \n", j, tabX[j], tabX[j], tabX[j]);
+    }
+
+    printf("\n\n#####################\n");
 
     char name3[20];
 

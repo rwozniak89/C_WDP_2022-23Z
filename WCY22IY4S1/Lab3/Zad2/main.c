@@ -7,7 +7,9 @@
 //Zadanie zrealizuj równie¿ dla tablic 2 wymiarowych, a dla chêtnych osób,
 //równie¿ tablice 3 wymiarowe (w tych przypadkach wybierz jeden wygodny sposób
 //na zadeklarowanie i zdefiniowanie tablic). (0.5 pkt.)
+
 #define SizeMain 5
+
 
 int main()
 {
@@ -15,7 +17,7 @@ int main()
 
     enum sizeEnum { s1=5 };
 
-
+    //const int rozmiar = 5;
 
     int tab2[] = { 31, 32, 33, 34, 35 };
     int tab3[SizeMain] = { 31, 32, 33, 34, 35 };
@@ -30,12 +32,25 @@ int main()
     //....
     tab[5] = 21;
     tab[9] = 25;
-    int sizeTab = 10;
+    int sizeTab = sizeof(tab) / sizeof(int); //10;
 
     int sizeTab2 = sizeof(tab2) / sizeof(int); // sizeof(tab2[0]) sizeof(*tab2);
 
     for(int i=0; i < sizeTab; i++){
-        printf("index:%i, wartosc:%i, adres:%i\n", i, tab[i], &tab[i]);
+        printf("index:%i, wartosc:%i, adres:%p, zawartosc1: %i, zawartosc2: %i\n", i, tab[i], &tab[i], *(&tab[i]), *(tab+i)  );
+    }
+
+    for(int i=0; i < sizeTab; i++){
+        tab[i] = 0;//i;
+    }
+    printf("tablica po inicjalizacji w petli\n");
+    for(int i=0; i < sizeTab; i++){
+        printf("index:%i, wartosc:%i, adres:%p, zawartosc1: %i, zawartosc2: %i\n", i, tab[i], &tab[i], *(&tab[i]), *(tab+i)  );
+    }
+    int tab5[SizeMain] = { 0 };
+    printf("tablica po inicjalizacji 0 \n");
+    for(int i=0; i < SizeMain; i++){
+        printf("index:%i, wartosc:%i,\n", i, tab5[i]  );
     }
 
 
@@ -55,5 +70,5 @@ int main()
     int matrix1[][3] = {{5,3,2}, {1,2,4}};
 
 
-    return 0;
+    //return 0;
 }

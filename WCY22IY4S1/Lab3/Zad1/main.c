@@ -5,16 +5,25 @@ int main()
 {
     printf("Zad1!\n");
 
-    for(int i = 0; ; i++){
+    int indexOfAlbum = 45879;
 
-        if(i == 100){
+    int stop = indexOfAlbum +100;
+    int stopWithBreak = indexOfAlbum + 95;
+    int stopWithContinue = indexOfAlbum + 60;
+
+    for(int i = indexOfAlbum; i<stop ; i++){
+
+        if(i == stopWithBreak){
             break;
         }
         printf("informacja 1, ");
 
         printf("liczba %i ", i);
+        if( i % 2 == 0){
+            printf(" - liczba parzysta ");
+        }
 
-        if(i == 60){
+        if(i == stopWithContinue){
             continue;
         }
 
