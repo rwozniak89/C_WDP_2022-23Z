@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 void wyswietlZaintersowania2();
-void wyswietlZaintersowania3();
+int wyswietlZaintersowania3(int, float);
 void wyswietlZaintersowani4();
 void wyswietlZaintersowania5();
 
@@ -14,6 +14,16 @@ void wyswietlZaintersowania(  ){
     //return NULL;
 
 }
+
+
+
+
+
+
+
+
+
+
 
 int getAge(){
 
@@ -29,6 +39,9 @@ int main()
     wyswietlZaintersowania();
     wyswietlZaintersowania2();
     wyswietlZaintersowania2();
+    int c=1;
+    float d = 1.1;
+    c = wyswietlZaintersowania3(c,d);
 
     int zmiennaZOgraniczeniem = 10;
     for( int i = 0; i< zmiennaZOgraniczeniem; i++ ){
@@ -48,4 +61,9 @@ int main()
 
 void wyswietlZaintersowania2() {
     printf("XXXXXXXXX\n");
+}
+
+int wyswietlZaintersowania3(int a, float b){
+    //xxxxx
+    return a;
 }
