@@ -71,9 +71,11 @@ void wyswietlDzien(enum week dzien)
 
 int main()
 {
+    int zwyklaLiczba = PONIEDZIALEK;
     printf("Hello world!\n");
     wyswietlDzien(PONIEDZIALEK);
     wyswietlDzien(0);
+    wyswietlDzien(zwyklaLiczba);
     wyswietlDzien(CZWARTEK);
 
     wyswietlDzien(NIEDZIELA);
