@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1673287891 source:c:\projects\c_wdp_2022-23z\wcy22iy5s1\lab5\zad4\main.c
+	<stdio.h>
+	<stdlib.h>
+	"tri.h"
+
+1673287865 c:\projects\c_wdp_2022-23z\wcy22iy5s1\lab5\zad4\tri.h
+
