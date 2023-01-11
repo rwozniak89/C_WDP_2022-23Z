@@ -3,6 +3,8 @@
 
 #include "tri.h"
 
+#include "xxxxx.h"
+
 struct trojkat {
     int a;
     int b;
@@ -12,6 +14,21 @@ struct trojkat {
 void wyswietlTrojkat(struct trojkat param1){
     printf("trojakt a:%d, b:%d, c:%d\n", param1.a, param1.b, param1.c);
 }
+
+//int obliczX(struct trojkat t){
+//    if( t.a ....)
+//    {
+//        return ...
+//    }
+//    if else ....
+//
+//    else{
+//        printf("taka figura jest nie prawidlowa.... blad 987");
+//        return -1;
+//    }
+//    printf("taka figura jest nie prawidlowa.... blad 987");
+//    return -1;
+//}
 
 void wyswietlTrianglePtr(triangle* param1){
     printf("triangle a:%d, b:%d, c:%d\n", param1->a, param1->b, param1->c);
