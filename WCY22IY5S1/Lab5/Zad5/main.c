@@ -56,12 +56,12 @@ void wyswietlSerwer(Serwer komputer)
     }
 }
 
-void wyswietlKomputer(Komputer komputer)
+void wyswietlKomputer(Komputer sprzet)
 {
-    printf("Komputer: %s, ", komputer.nazwa);
-    printf("IPv4: %s, ", komputer.ipv4);
+    printf("Komputer: %s, ", sprzet.nazwa);
+    printf("IPv4: %s, ", sprzet.ipv4);
     printf("Status polaczenia: ");
-    switch (komputer.status)
+    switch (sprzet.status)
     {
     case Nawiazane:
         printf("Polaczono\n");
